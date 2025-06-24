@@ -1,0 +1,16 @@
+# Ignore .log files in any tb folder
+code/task*_data/tb/**/*.log
+
+# Ignore qaLog.txt specifically
+code/task*_data/tb/qaLog.txt
+
+# Ignore .simvision directory
+code/task*_data/tb/.simvision/
+
+# Ignore xrun.key and xrun.history
+code/task*_data/tb/xrun.key
+code/task*_data/tb/xrun.history
+
+# Ignore coverage and xcelium directories
+code/task*_data/tb/cov_work/
+code/task*_data/tb/xcelium.d/
