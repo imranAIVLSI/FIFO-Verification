@@ -16,6 +16,27 @@ module top #(parameter DATA_WIDTH = 8, DEPTH = 8);
         .empty(bus.empty)
         );
 
+    fifo_coverage #(.DATA_WIDTH(DATA_WIDTH), .DEPTH(DEPTH)) cov (
+        .clk(bus.clk),
+        .rst_n(bus.rst_n),
+        .wr_en(bus.wr_en),
+        .rd_en(bus.rd_en),
+        .full(bus.full),
+        .empty(bus.empty),
+        .data_in(bus.data_in),
+        .data_out(bus.data_out)
+    );
+
+    fifo_assertions #(.DATA_WIDTH(DATA_WIDTH), .DEPTH(DEPTH)) asser (
+        .clk(bus.clk),
+        .rst_n(bus.rst_n),
+        .wr_en(bus.wr_en),
+        .rd_en(bus.rd_en),
+        .full(bus.full),
+        .empty(bus.empty),
+        .data_in(bus.data_in),
+        .data_out(bus.data_out)
+    );
     // initial begin
     //     bus.rst_n = 0;
     //     @(posedge bus.clk);
@@ -23,7 +44,6 @@ module top #(parameter DATA_WIDTH = 8, DEPTH = 8);
     // end
         // reset_test t1(bus);
     initial begin
-     
         test = new(bus, 20);
         test.run_all_tests();
         $finish;

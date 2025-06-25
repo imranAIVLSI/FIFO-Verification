@@ -1,8 +1,3 @@
-// `include "transaction.sv"
-// `include "generator.sv"
-// `include "monitor.sv"
-// `include "scoreboard.sv"
-
 class env #(parameter DATA_WIDTH = 8, parameter DEPTH = 8);
     virtual fif_intf vif;
     mailbox gen2driv;
@@ -46,10 +41,9 @@ class env #(parameter DATA_WIDTH = 8, parameter DEPTH = 8);
         wait(scb.trans_count >= repeat_count);
         $display("=================TEST COMPLETED ================");
         $display("Total Errors: %0d", scb.err_count);
-        if(scb.err_count == 0)
-            $display("FIFO VERIFICATION SUCCESSFULL");
-        else
+        if(scb.err_count != 0)
             $display("FIFO VERIFICATION FAILED");
+    
     endtask
 
     task run();

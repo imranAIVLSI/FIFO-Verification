@@ -8,5 +8,7 @@
 ./test_lib.sv
 // ./test.sv
 ./fifo.sv
+./fifo_assertions.sv
+./fifo_coverage.sv
 ./top.sv
 

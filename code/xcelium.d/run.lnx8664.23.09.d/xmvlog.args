@@ -14,6 +14,8 @@
 ./env.sv
 ./test_lib.sv
 ./fifo.sv
+./fifo_assertions.sv
+./fifo_coverage.sv
 ./top.sv
 -CDSLIB
 ./xcelium.d/run.lnx8664.23.09.d/cdsrun.lib

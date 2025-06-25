@@ -37,7 +37,7 @@ class transaction #(parameter DATA_WIDTH = 8);
     // Display Method
     function void display(string tx);
         // $display("***============== %s Transaction ===============***", tx);
-        $display("[%0t][%s]\tReset:\t%0b\tWrite Enable:\t%0b\tRead Enable:\t%0b\tData IN:\t%0d\tData Out:\t%0d\tFull Flag:\t%0b\tEmpty Flag:\t%0b",$time,tx,rst_n_t,wr_en_t,rd_en_t,data_in_t,data_out_t,full_t,empty_t);
+        $display("[%0t][%s] \tReset:\t%0b\tWrite Enable:\t%0b\tRead Enable:\t%0b\tData IN:\t%0d\tData Out:\t%0d\tFull Flag:\t%0b\tEmpty Flag:\t%0b",$time,tx,rst_n_t,wr_en_t,rd_en_t,data_in_t,data_out_t,full_t,empty_t);
     endfunction
 
 endclass

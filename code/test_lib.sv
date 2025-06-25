@@ -26,6 +26,12 @@ class read_full extends transaction;
       endfunction
 endclass
 
+class rand_RW extends transaction;
+  constraint c2 {
+    !(rd_en_t == 0 && wr_en_t == 0);
+  }
+endclass
+
 class test_lib;
   transaction trans;
   env env1;
@@ -52,13 +58,16 @@ class test_lib;
   endtask
 
   task test3_read_full();
-    // fifo_full t = new();
+
     read_full t1 = new();
-    // env1.gen.trans = t;
-    // env1.run();
-    // // wait(env1.scb.trans_count == count);
-    // @(posedge vif.clk);
     env1.gen.trans = t1;
+    env1.run();
+
+  endtask
+
+  task test_4_randRW();
+    // rand_RW t = new();
+    // env1.gen.trans = t;
     env1.run();
 
   endtask
@@ -68,6 +77,7 @@ class test_lib;
     // #20;
     // test2_write_full();
     test3_read_full();
+    // test_4_randRW();
     // $display("[TEST] All scenarios executed.");
   endtask
 

@@ -19,10 +19,10 @@ class monitor;
                 trans.data_out_t = mbus.data_out;
                 trans.full_t = mbus.full;
                 trans.empty_t = mbus.empty;
-                trans.rst_n_t=mbus.rst_n;
+                trans.rst_n_t= mbus.rst_n;
 
             mon2sb.put(trans);
-            trans.display("Monitor");
+            // trans.display("Monitor");
         end
     endtask
 endclass

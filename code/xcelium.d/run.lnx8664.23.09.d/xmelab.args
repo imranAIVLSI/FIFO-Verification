@@ -2,6 +2,10 @@
 // File created by:  xrun
 // Do not modify this file
 //
+-ACCESS
++rwc
+-COVERAGE
+U
 -no_analogsolver
 -MESSAGES
 -XLMODE

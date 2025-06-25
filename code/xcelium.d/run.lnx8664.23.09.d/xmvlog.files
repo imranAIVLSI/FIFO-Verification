@@ -2,13 +2,15 @@
 // File created by:  xrun
 // Do not modify this file
 //
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/transaction.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/fif_intf.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/generator.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/driver.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/monitor.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/scoreboard.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/env.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/test_lib.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/fifo.sv"
-"/home/cc/Downloads/Imran/SystemVerilog/Labs/NCDC_DV_Weekend_Project (FIFO Verification)/top.sv"
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/transaction.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/fif_intf.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/generator.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/driver.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/monitor.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/scoreboard.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/env.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/test_lib.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/fifo.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/fifo_assertions.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/fifo_coverage.sv
+/home/cc/Downloads/Imran/SystemVerilog/FIFO_Verification/FIFO_Verification/code/top.sv

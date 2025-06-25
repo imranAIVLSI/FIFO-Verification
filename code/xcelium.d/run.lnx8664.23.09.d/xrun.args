@@ -4,3 +4,8 @@
 //
 -f
 file.f
+-access
++rwc
+-coverage
+U
+-covoverwrite

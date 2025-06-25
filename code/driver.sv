@@ -15,7 +15,7 @@ class driver;
         // $display("**============== Driver =============");
         forever begin
             gen2driv.get(trans);
-            trans.display("Driver");
+            // trans.display("Driver");
             @(negedge dbus.clk);
                 dbus.rst_n <= trans.rst_n_t;
                 dbus.wr_en <= trans.wr_en_t;
